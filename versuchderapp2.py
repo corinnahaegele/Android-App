@@ -19,7 +19,12 @@ from kivy.uix.screenmanager import ScreenManager
 from kivy.uix.screenmanager import Screen
 from kivy.core.window import Window
 from kivy.uix.image import Image
-import time
+import os
+import certifi
+from android.storage import primary_external_storage_path
+
+os.environ["SSL_CERT_FILE"]=certifi.where()
+primary_ext_storage = primary_external_storage_path()
 
 connection = pymysql.connect("sql.haegelix.de", "db_flunky", "fsdhjkvgu245jhsdg", "flunkyball")
 # connection=s.connect("Nutzerdatenbank.db")
