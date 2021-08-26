@@ -1,0 +1,18 @@
+Buildozer Befehle
+
+sudo apt-get install cython
+
+sudo pip3 install kivy
+
+sudo pip3 install --user pymysql
+
+
+lld not found, linking without it. Consider installing lld if linker errors occur
+
+sudo adb kill-server
+sudo adb start-server
+sudo adb devices
+
+
+
+
